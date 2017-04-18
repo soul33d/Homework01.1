@@ -11,7 +11,9 @@ public class Main {
     private static String askName() {
         System.out.println("Enter Your name");
         Scanner scanner = new Scanner(System.in);
-        return scanner.next();
+        String name = scanner.next();
+        scanner.close();
+        return name;
     }
     private static void printGreeting(String name){
         System.out.println("Hello, " + name);
